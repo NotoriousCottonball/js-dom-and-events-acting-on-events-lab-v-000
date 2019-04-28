@@ -21,7 +21,7 @@ function addNewElementAsLi() {
 
 function addNewLiOnClick() {
    document.querySelector('form').addEventListener('submit', function(e) {
-    console.log(document.querySelector('input').value);
+    console.log(document.querySelector('input').value.trim());
     addNewElementAsLi();
     document.querySelector('input').value = "";
   })
