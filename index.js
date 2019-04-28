@@ -57,7 +57,7 @@ function retrieveEmployeeInformation(input){
  function addNewElementAsLi(){
   let node = document.createElement("LI")
   node.innerHTML = retrieveEmployeeInformation()
-  $('ul.employee-list').add(node);
+  $('ul.employee-list').append(node);
 }
 
 
