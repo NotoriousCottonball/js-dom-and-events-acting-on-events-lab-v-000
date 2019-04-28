@@ -19,9 +19,9 @@ function addNewElementAsLi(){
 
 function addNewLiOnClick(){
   document.querySelector('form').addEventListener('submit', function(event){
-      event.preventDefault();
       addNewElementAsLi();
       resetInput();
+      event.preventDefault();
   });
 }
 
