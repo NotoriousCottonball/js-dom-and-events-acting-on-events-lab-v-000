@@ -68,5 +68,5 @@ function retrieveEmployeeInformation(input){
   let list = $('ul').first();
   list.innerHTML = '';
   })
-  
+}
 */
