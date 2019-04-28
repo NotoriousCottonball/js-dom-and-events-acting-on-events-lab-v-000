@@ -22,7 +22,6 @@ function addNewLiOnClick(){
   submit.addEventListener('click', function(event){
     addNewElementAsLi();
     resetInput();
-    event.preventDefault();
   });
 }
       
