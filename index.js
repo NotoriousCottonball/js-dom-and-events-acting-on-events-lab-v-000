@@ -7,7 +7,7 @@ function preventRefreshOnSubmit(){
 preventRefreshOnSubmit();
 
 function retrieveEmployeeInformation(){
-  return document.querySelector('input[name="pwd"]').value
+  return document.querySelector('input[name="name"]').value
 }
 
 function addNewElementAsLi(){
