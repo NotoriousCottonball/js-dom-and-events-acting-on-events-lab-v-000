@@ -55,7 +55,9 @@ function retrieveEmployeeInformation(input){
 }
 
  function addNewElementAsLi(){
-  $('ul.employee-list').append(retrieveEmployeeInformation());
+  let node = document.createElement("LI")
+  node.innerHTML = retrieveEmployeeInformation()
+  $('ul.employee-list').append(node);
 }
 
 
