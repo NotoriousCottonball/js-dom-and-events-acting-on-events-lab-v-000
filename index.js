@@ -20,7 +20,7 @@ function addNewElementAsLi() {
 }
 
 function clearFormField() {
-  document.getElementById('myform').reset();
+   document.querySelector('form').reset();
 }
 
 function addNewLiOnClick() {
