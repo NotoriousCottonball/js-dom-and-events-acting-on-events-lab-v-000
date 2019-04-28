@@ -4,6 +4,6 @@ function preventRefreshOnSubmit(){
     });
 }
 
-preventRefreshOnSubmit();
+//preventRefreshOnSubmit();
 
 
