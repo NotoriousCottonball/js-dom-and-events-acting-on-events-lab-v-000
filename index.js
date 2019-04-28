@@ -20,7 +20,7 @@ function addNewElementAsLi() {
 }
 
 function addNewLiOnClick() {
-   console.log(hi);
+   console.log('hi');
 
    document.querySelector('form').addEventListener('submit', function(e) {
     addNewElementAsLi();
