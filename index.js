@@ -32,17 +32,18 @@ function clearEmployeeListOnLinkClick(){
   let ul = document.querySelector('ul')
   link.addEventListener('click', function(event){
     ul.innerHTML = ''
-  })
+  });
 }
 
 function resetInput(){
   document.querySelector('input').value = ''
 }
 
+*/
 
 // With JQUERY
 
-/* 
+
 
 function retrieveEmployeeInformation(input){
   let employee = document.querySelector('input').value
@@ -67,6 +68,6 @@ function retrieveEmployeeInformation(input){
   link.addEventListener('click', event => { event.preventDefault()
   let list = $('ul').first();
   list.innerHTML = '';
-  })
+  });
 }
-*/
+
