@@ -65,13 +65,14 @@ function retrieveEmployeeInformation(input){
   })
 }
 
- function clearEmployeeListOnLinkClick() {
+function clearEmployeeListOnLinkClick() {
   let link = $('a')[0];
   link.addEventListener('click', event => { event.preventDefault()
   let list = $('ul')[0];
   list.innerHTML = '';
   });
 }
+
 function resetInput(){
   document.querySelector('input').value = ''
 }
