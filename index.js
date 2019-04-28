@@ -6,7 +6,7 @@ function preventRefreshOnSubmit(){
 
 preventRefreshOnSubmit();
 
-/* 
+ 
 
 function retrieveEmployeeInformation(){
   return document.querySelector('input[name="name"]').value
@@ -41,9 +41,9 @@ function resetInput(){
   document.querySelector('input').value = ''
 }
 
-*/
-
 // With JQUERY
+
+/*
 
 function clearFormField() {
   document.getElementById('myform').reset();
@@ -81,3 +81,4 @@ function resetInput(){
   document.querySelector('input').value = ''
 }
 
+*/
