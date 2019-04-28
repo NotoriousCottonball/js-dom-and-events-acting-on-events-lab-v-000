@@ -19,6 +19,10 @@ function addNewElementAsLi() {
    document.querySelector('.employee-list').appendChild(listElement);
 }
 
+function clearFormField() {
+  document.getElementById('myform').reset();
+}
+
 function addNewLiOnClick() {
    document.querySelector('form').addEventListener('submit', function(e) {
     addNewElementAsLi();
