@@ -74,6 +74,6 @@ function clearEmployeeListOnLinkClick() {
 }
 
 function clearFormField() {
-  document.getElementByTag('form').reset();
+  document.querySelector('form').reset();
 }
 
