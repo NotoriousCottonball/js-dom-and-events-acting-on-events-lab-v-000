@@ -56,9 +56,6 @@ function retrieveEmployeeInformation(input){
   $('ul.employee-list').append(retrieveEmployeeInformation());
 }
 
-function resetInput(){
-  document.querySelector('input').value = ''
-}
 
  function addNewLiOnClick(event){
   let submit = $('input')[0];
@@ -76,5 +73,7 @@ function clearEmployeeListOnLinkClick() {
   });
 }
 
-
+function resetInput(){
+  document.querySelector('input').value = ''
+}
 
