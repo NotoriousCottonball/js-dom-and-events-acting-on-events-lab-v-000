@@ -66,7 +66,7 @@ function retrieveEmployeeInformation(input){
 }
 
  function clearEmployeeListOnLinkClick() {
-  let link = $('a').first();
+  let link = $('a');
   link.addEventListener('click', event => { event.preventDefault()
   let list = $('ul').first();
   list.innerHTML = '';
