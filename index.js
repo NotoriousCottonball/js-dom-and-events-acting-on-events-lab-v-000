@@ -7,28 +7,34 @@ function preventRefreshOnSubmit(){
 preventRefreshOnSubmit();
 
 
-function retrieveEmployeeInformation() {
-  return $('input').val()
+let input = document.querySelector('input')
+
+function retrieveEmployeeInformation(){
+  return input.value
 }
 
- function addNewElementAsLi(){
-  let newLi = document.createElement('li');
-  newLi.innerHTML = retrieveEmployeeInformation();
-  const list = document.querySelector('.employee-list');
-  list.appendChild(newLi);
+function addNewElementAsLi(){
+  let employeeName = retrieveEmployeeInformation()
+  document.querySelector('.employee-list').insertAdjacentHTML('beforeend', `<li>${employeeName}</li>`)
 }
 
- function addNewLiOnClick(){
-  let submit = document.querySelector("input[type = 'submit']");
-  submit.addEventListener('click', function(){
-    addNewElementAsLi();
-    document.querySelector('input').value = '';
+
+function addNewLiOnClick(){
+  let submit = document.querySelector('input[type="submit"]')
+  submit.addEventListener('click', function(event){
+    addNewElementAsLi()
+    resetInput()
   })
+}
 
- }
 function clearEmployeeListOnLinkClick(){
-  let clear = document.querySelector('a');
-  clear.addEventListener('click', function(){
-    document.querySelector('.employee-list').innerHTML = '';
+  let link = document.querySelector('a')
+  let ul = document.querySelector('ul')
+  link.addEventListener('click', function(event){
+    ul.innerHTML = ''
   })
+}
+
+function resetInput(){
+  document.querySelector('input').value = ''
 }
