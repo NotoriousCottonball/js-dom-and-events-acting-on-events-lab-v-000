@@ -17,11 +17,12 @@ function addNewElementAsLi(){
 }
 
 
-function addNewLiOnClick(){
-  document.querySelector('form').addEventListener('submit', function(e) {
+function addNewLiOnClick() {
+
+   document.querySelector('form').addEventListener('submit', function(e) {
     addNewElementAsLi();
-  });
-    resetInput();
+    document.querySelector('input').value = "";
+  })
 }
 
 function clearEmployeeListOnLinkClick(){
