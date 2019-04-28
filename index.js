@@ -53,7 +53,7 @@ function retrieveEmployeeInformation(input){
 }
 
  function addNewElementAsLi(){
-  $('ul.employee-list').append(retrieveEmployeeInformation());
+  $('ul.employee-list').appendChild(retrieveEmployeeInformation());
 }
 
 
