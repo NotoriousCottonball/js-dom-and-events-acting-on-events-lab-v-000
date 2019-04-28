@@ -17,11 +17,11 @@ function addNewElementAsLi(){
 }
 
 
-function addNewLiOnClick() {
-
-   document.querySelector('form').addEventListener('submit', function(e) {
-    addNewElementAsLi();
-    document.querySelector('input').value = "";
+function addNewLiOnClick(){
+  let submit = document.querySelector('input[type="submit"]')
+  submit.addEventListener('click', function(event){
+    addNewElementAsLi()
+    resetInput()
   })
 }
 
