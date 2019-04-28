@@ -63,7 +63,7 @@ function retrieveEmployeeInformation(input){
 }
 
  function clearEmployeeListOnLinkClick() {
-  let x = document.getElementById('clear')
+  let link = document.getElementById('clear')
   x.addEventListener('click', event => { event.preventDefault()
   let list = document.getElementById('elist')
   list.innerHTML = '';
