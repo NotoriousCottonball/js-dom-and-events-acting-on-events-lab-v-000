@@ -58,7 +58,7 @@ function retrieveEmployeeInformation(input){
   let submit = $('form input:last')[0];
   submit.addEventListener('click', event => {
     addNewElementAsLi();
-   resetInput();
+    resetInput();
   })
 }
 
