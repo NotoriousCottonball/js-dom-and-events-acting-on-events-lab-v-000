@@ -45,7 +45,9 @@ function resetInput(){
 
 // With JQUERY
 
-
+function clearFormField() {
+  document.getElementById('myform').reset();
+}
 
 function retrieveEmployeeInformation(input){
   let employee = document.querySelector('input').value
