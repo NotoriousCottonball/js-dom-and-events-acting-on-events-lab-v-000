@@ -72,4 +72,5 @@ function retrieveEmployeeInformation(input){
   let list = document.getElementById('elist')
   list.innerHTML = '';
   })
+  
 */
