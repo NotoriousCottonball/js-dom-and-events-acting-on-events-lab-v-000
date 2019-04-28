@@ -58,7 +58,7 @@ function retrieveEmployeeInformation(input){
 
 
  function addNewLiOnClick(event){
-  let submit = $('form input:last');
+  let submit = $('form input:last').first();
   submit.addEventListener('click', event => {
     addNewElementAsLi();
     resetInput();
