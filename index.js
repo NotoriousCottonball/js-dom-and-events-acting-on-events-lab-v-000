@@ -26,6 +26,7 @@ function clearFormField() {
 function addNewLiOnClick() {
    document.querySelector('form').addEventListener('submit', function(e) {
     addNewElementAsLi();
+    clearFormField();
     
   })
 }
