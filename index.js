@@ -73,7 +73,7 @@ function clearEmployeeListOnLinkClick() {
   });
 }
 
-function resetInput(){
-  document.querySelector('input').value = ''
+function clearFormField() {
+  document.getElementByTag('form').reset();
 }
 
