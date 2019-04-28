@@ -8,10 +8,10 @@ preventRefreshOnSubmit();
 
 
 function retrieveEmployeeInformation(){
-  return document.querySelector('input').value;
+  return document.querySelector('input').value
 }
 
-function addNewElementAsLi() {
+ function addNewElementAsLi() {
   let listElement =  document.createElement('li');
 
    listElement.innerHTML = retrieveEmployeeInformation();
@@ -19,15 +19,12 @@ function addNewElementAsLi() {
    document.querySelector('.employee-list').appendChild(listElement);
 }
 
-function clearFormField() {
-   document.querySelector('form').reset();
-}
+ function addNewLiOnClick() {
 
-function addNewLiOnClick() {
    document.querySelector('form').addEventListener('submit', function(e) {
     addNewElementAsLi();
-    clearFormField();
-  });
+    document.querySelector('input').value = "";
+  })
 }
 
  function clearEmployeeListOnLinkClick() {
@@ -39,4 +36,3 @@ function addNewLiOnClick() {
     }
   })
 } 
-
